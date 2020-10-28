@@ -12,7 +12,7 @@ namespace Shapes_Library
         {
             get
             {
-                return Size.X * Size.Y * 4 + Size.Y * Size.Z * 2;
+                return (Size.X * Size.Y) * 2 + (Size.Y * Size.Z) * 2 + (Size.X * Size.Z) * 2;
             }
         }
         public override float Volume

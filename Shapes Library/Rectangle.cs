@@ -33,8 +33,6 @@ namespace Shapes_Library
                 return false;
                 else return true;
             }
-
-
         }
 
         public Rectangle(Vector2 center, Vector2 size)
@@ -48,14 +46,12 @@ namespace Shapes_Library
             Size.X = width;
             Size.Y = width;
         }
-
         public override string ToString()
         {
             if (IsSquare == false)
             
                 return $"Rectangle @({Center.X.ToString("F1")}, {Center.Y.ToString("F1")}): W:{Size.X.ToString("F1")}, H:{Size.Y.ToString("F1")}";
                 else return $"Square @({Center.X.ToString("F1")}, {Center.Y.ToString("F1")}): W:{Size.X.ToString("F1")}, {Size.Y.ToString("F1")}";
-            
         }
     }
 }
